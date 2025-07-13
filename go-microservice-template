@@ -1,0 +1,9 @@
+# This is the "Golden Path" template owned by the Platform Team.
+# It contains all the mandatory steps for a Go microservice.
+steps:
+  - name: "Build Go Application"
+    run: "go build ./..."
+  - name: "Run Unit Tests"
+    run: "go test ./..."
+  - name: "Run Security Scan (Mandatory)"
+    uses: "cloudbees/security-scan@v2"
